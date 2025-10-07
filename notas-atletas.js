@@ -18,7 +18,8 @@ class Atleta{
   exibirResultado(){
     console.log(`Atleta: ${this.nome}`);
     console.log(`Notas: ${this.notas.join(", ")}`);
-    console.log(`Média Válida: ${this.obterMedia()}`)
+    console.log(`Média Válida: ${this.obterMedia()}`);
+    console.log("-----------------------------------------")
   }
  
 }
@@ -28,6 +29,7 @@ class Atleta{
     }
     exibirResultados(){
       console.log("RESULTADOS DA COMPETICAO ")
+      console.log("===============================")
       return this.atletas.forEach(atleta => atleta.exibirResultado());
     }
   }
